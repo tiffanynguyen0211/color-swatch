@@ -1,0 +1,87 @@
+@use './scss/reset.scss';
+@use './scss/mixins';
+@use './scss/variables.scss';
+
+
+$font-margin: 10px 0;
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font: 100% 'Roboto', arial, sans-serif;
+  display:flex;
+  min-height:100vh; 
+  flex-direction:column;
+  align-items: center;
+  justify-content:center;
+}
+
+h1 {
+  margin: $font-margin;
+
+  @include mixins.fontSize(21, 25);
+  @include mixins.respond(lg) {
+    @include mixins.fontSize(26, 32);
+  }
+}
+
+p {
+  margin: $font-margin;
+
+  @include mixins.fontSize(16, 20);
+}
+
+input,textarea {
+  font-size: inherit; //prevent auto zoom in on some mobile browsers
+  opacity: 1;
+
+  &:focus {
+   opacity: 1;
+  }
+}
+
+button {
+  cursor: pointer;
+
+  &:hover, &:focus {
+    background-color: variables.$grey-color;
+  }
+}
+
+.Button {
+  box-shadow: 0px 0px 11px 1px rgb(0 0 0 / 10%);
+  font-weight: 500;
+  border-radius: 5px;
+  @include mixins.fontSize(14, 16);
+  transition: all 0.3s ease 0s;
+  color: variables.$dark-color;
+  padding: variables.$spacing-unit;
+
+  &:hover, &:focus {
+    background-color: variables.$primary-color;
+    color: variables.$white-color;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  }
+
+}
+
+.Input {
+  padding: variables.$spacing-unit;
+  border: 1px solid variables.$grey-color;
+  border-radius: 5px;
+  margin-bottom: 5px;
+
+  @include mixins.respond(lg) {
+    margin-right: 5px;
+  }
+}

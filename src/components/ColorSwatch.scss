@@ -1,0 +1,48 @@
+@use "../scss/variables.scss";
+
+.ColorSwatch__ColorList {
+  display: grid;
+  overflow: auto;
+  height: 300px;
+  margin: 0 variables.$spacing-unit;
+  grid-auto-rows: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(65px, 1fr));
+}
+
+.ColorSwatch__Display {
+  width: 50%;
+  margin-right: variables.$spacing-unit;
+  margin-left: variables.$spacing-unit;
+
+  &::before {
+    padding-top: 50%;
+    content: "";
+    float: left;
+  }
+}
+
+.ColorSwatch__Container {
+  width: 100vw;
+}
+
+.ColorSwatch__DisplayContainer {
+  display: flex;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.ColorSwatch__Button {
+  margin: 5px;
+  box-shadow: 0 0 5px 3px rgb(0 0 0 / 14%);
+  transition: transform 1s;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 5px 3px rgb(0 0 0 / 14%);
+    transform: scale(1.075);
+  }
+}
+
+.ColorSwatch__Button--reset {
+  margin: 0 variables.$spacing-unit 30px;
+}

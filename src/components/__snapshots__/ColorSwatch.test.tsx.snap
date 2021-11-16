@@ -1,0 +1,214 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ColorSwatch should match snapshot on empty data render 1`] = `
+<div
+  className="ColorSwatch__Container"
+>
+  <div
+    className="ColorSwatch__DisplayContainer"
+  >
+    <div
+      style={
+        Object {
+          "margin": "auto",
+        }
+      }
+    >
+      Loading...
+    </div>
+  </div>
+  <button
+    className="Button ColorSwatch__Button--reset"
+    onClick={[MockFunction]}
+  >
+    Reload Color
+  </button>
+  <div
+    className="ColorSwatch__ColorList"
+  >
+    <div
+      style={
+        Object {
+          "margin": "auto",
+        }
+      }
+    >
+      Loading...
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ColorSwatch should match snapshot on first render 1`] = `
+<div
+  className="ColorSwatch__Container"
+>
+  <div
+    className="ColorSwatch__DisplayContainer"
+  >
+    <div
+      style={
+        Object {
+          "margin": "auto",
+        }
+      }
+    >
+      Loading...
+    </div>
+  </div>
+  <button
+    className="Button ColorSwatch__Button--reset"
+    onClick={[MockFunction]}
+  >
+    Reload Color
+  </button>
+  <div
+    className="ColorSwatch__ColorList"
+  >
+    <ColorPanel
+      components={
+        Object {
+          "blue": 241,
+          "green": 83,
+          "red": 206,
+        }
+      }
+      key="rgb-0"
+      kind="rgb"
+      onClick={[Function]}
+    />
+    <ColorPanel
+      components={
+        Object {
+          "blue": 132,
+          "green": 210,
+          "red": 146,
+        }
+      }
+      key="rgb-1"
+      kind="rgb"
+      onClick={[Function]}
+    />
+    <ColorPanel
+      components={
+        Object {
+          "blue": 221,
+          "green": 124,
+          "red": 245,
+        }
+      }
+      key="rgb-2"
+      kind="rgb"
+      onClick={[Function]}
+    />
+    <ColorPanel
+      components={
+        Object {
+          "blue": 76,
+          "green": 241,
+          "red": 55,
+        }
+      }
+      key="rgb-3"
+      kind="rgb"
+      onClick={[Function]}
+    />
+    <ColorPanel
+      components={
+        Object {
+          "blue": 205,
+          "green": 20,
+          "red": 181,
+        }
+      }
+      key="rgb-4"
+      kind="rgb"
+      onClick={[Function]}
+    />
+    <ColorPanel
+      components={
+        Object {
+          "blue": 241,
+          "green": 83,
+          "red": 206,
+        }
+      }
+      key="rgb-5"
+      kind="rgb"
+      onClick={[Function]}
+    />
+    <ColorPanel
+      components={
+        Object {
+          "blue": 132,
+          "green": 210,
+          "red": 146,
+        }
+      }
+      key="rgb-6"
+      kind="rgb"
+      onClick={[Function]}
+    />
+    <ColorPanel
+      components={
+        Object {
+          "blue": 221,
+          "green": 124,
+          "red": 245,
+        }
+      }
+      key="rgb-7"
+      kind="rgb"
+      onClick={[Function]}
+    />
+    <ColorPanel
+      components={
+        Object {
+          "blue": 76,
+          "green": 241,
+          "red": 55,
+        }
+      }
+      key="rgb-8"
+      kind="rgb"
+      onClick={[Function]}
+    />
+    <ColorPanel
+      components={
+        Object {
+          "blue": 205,
+          "green": 20,
+          "red": 181,
+        }
+      }
+      key="rgb-9"
+      kind="rgb"
+      onClick={[Function]}
+    />
+    <ColorPanel
+      components={
+        Object {
+          "hue": 0,
+          "lightness": 50,
+          "saturation": 100,
+        }
+      }
+      key="hsl-10"
+      kind="hsl"
+      onClick={[Function]}
+    />
+    <ColorPanel
+      components={
+        Object {
+          "hue": 180,
+          "lightness": 50,
+          "saturation": 50,
+        }
+      }
+      key="hsl-11"
+      kind="hsl"
+      onClick={[Function]}
+    />
+  </div>
+</div>
+`;
